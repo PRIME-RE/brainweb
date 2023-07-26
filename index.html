@@ -951,8 +951,8 @@
 
             const circleName = "BrainWeb";
             const skill =  "Prime-DRE";
-            // const filterSkills = ["Evolution", "Neuroimaging", "Brain evolution", "Primate", "Non-human primate", "Macaque", "Comparative MRI", "Python", "Open Science", "Data sharing", skill];
-            const filterSkills = ["Python"];
+            const filterSkills = ["Evolution", "Neuroimaging", "Brain evolution", "Primate", "Non-human primate", "Macaque", "Comparative MRI", "Open Science", "Data sharing"].map((s)=>s.toLowerCase());
+            // const filterSkills = ["python"];
             const skills = [];
 
             function arr2dic(arr) {
@@ -1019,7 +1019,7 @@
                     const filteredPeople = 
                         app.people.filter(
                             (p) => (p.skills || []).some(
-                                (s) => filterSkills.includes(s?.toLowerCase() || false)
+                                (s) => filterSkills.includes(s.toLowerCase() || false)
                             )
                         )
                     // const filteredPeople = app.people;
