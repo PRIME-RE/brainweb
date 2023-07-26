@@ -1044,29 +1044,29 @@
                     }
                     app.spinning = false;
 
-                    setTimeout(() => {
-                        const p1 = document.getElementById('programDay1');
-                        const p1Header = p1.getElementsByClassName('programDayHeader')[0];
-                        const p2 = document.getElementById('programDay2');
-                        const p2Header = p2.getElementsByClassName('programDayHeader')[0];
+                    // setTimeout(() => {
+                    //     const p1 = document.getElementById('programDay1');
+                    //     const p1Header = p1.getElementsByClassName('programDayHeader')[0];
+                    //     const p2 = document.getElementById('programDay2');
+                    //     const p2Header = p2.getElementsByClassName('programDayHeader')[0];
 
-                        const before = document.getElementById('programDay1Before');
-                        const after = document.getElementById('programDay2After');
+                    //     const before = document.getElementById('programDay1Before');
+                    //     const after = document.getElementById('programDay2After');
 
-                        function reworkTable() {
-                            before.style.height = '0px';
-                            after.style.height = '0px';
+                    //     function reworkTable() {
+                    //         before.style.height = '0px';
+                    //         after.style.height = '0px';
 
-                            const beforeSize = (p2.clientHeight - p2Header.clientHeight);
-                            const afterSize = (p1.clientHeight - p1Header.clientHeight);
+                    //         const beforeSize = (p2.clientHeight - p2Header.clientHeight);
+                    //         const afterSize = (p1.clientHeight - p1Header.clientHeight);
 
-                            before.style.height = beforeSize + 'px';
-                            after.style.height = afterSize + 'px';
-                        }
+                    //         before.style.height = beforeSize + 'px';
+                    //         after.style.height = afterSize + 'px';
+                    //     }
 
-                        window.addEventListener('resize', reworkTable);
-                        reworkTable();
-                    }, 500);
+                    //     window.addEventListener('resize', reworkTable);
+                    //     reworkTable();
+                    // }, 500);
 
                 });
             }
