@@ -9,8 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/animate.css@^3.5.2/animate.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/community/community.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./community/community.css">
   </head>
 
   <body>
@@ -23,7 +23,7 @@
     <!-- data value of nav bar corresponds to id in each section -->
     <nav class="navbar navbar-expand-lg fixed-top ">
 
-      <a class="navbar-brand" href="/" >
+      <a class="navbar-brand" href="./" >
         <div class="logo_brainweb">
           <p style="padding-left:4em;color:white;cursor:pointer;font-size:14px;font-weight:300;line-height:2.7;vertical-align: middle;">Prime-DRE-BrainWeb</p>
         </div>
@@ -45,10 +45,10 @@
       <div class="collapse navbar-collapse" id="myMenu" style="width:100%;">
         <ul class="navbar-nav mr-4" >
           <li class="nav-item">
-            <a class="nav-link" href="/">Prime-DRE-BrainWeb</a>
+            <a class="nav-link" href="./">Prime-DRE-BrainWeb</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/projects/">Projects</a>
+            <a class="nav-link" href="./projects/">Projects</a>
           </li>
           <li class="nav-item">
             <span class="nav-link" id="loginStatus" style="border-bottom:none">
@@ -257,7 +257,7 @@
                         <div class="organizerCard">
                           <p>
                             <a href="https://www.uu.nl/staff/PCKlink">Chris Klink</a> (Utrecht University, Netherlands)<br/>
-                            <a style="https://twitter.com/ChrizKlink"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" /img>@ChrizKlink</a>
+                            <a style="font-weight: 300;" href="https://twitter.com/ChrizKlink"><img style="width:1.8rem;transform:translate(0,0px);margin-right:5px;" src="./images/landing/twitter_white.png" /img>@ChrizKlink</a>
                           </p>
                         </div>
                         <div class="organizerCard">
@@ -344,7 +344,7 @@
       </div> <!-- end of q-app -->
 
       <!-- sentry -->
-      <script src="/js/sentry.min.js" data-lazy="no"></script>
+      <script src="./js/sentry.min.js" data-lazy="no"></script>
 
       <!-- Vue and Quasar -->
       <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
@@ -357,13 +357,13 @@
       <script defer src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
       <script defer src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
       <script defer src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
-      <script defer src="/js/init-firebase.js"></script>
+      <script defer src="./js/init-firebase.js"></script>
 
       <!-- D3 and BrainWeb graph -->
       <script src="https://d3js.org/d3.v5.min.js"></script>
 
       <script type="module">
-        import * as BW from "/community/brainweb.js";
+        import * as BW from "./community/brainweb.js";
 
         // const circleName = "BrainWeb";
         // const circleSkill = null;
