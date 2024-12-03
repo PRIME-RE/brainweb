@@ -78,8 +78,7 @@ const getRepoList = async () => {
   ];
   let res, response;
   try {
-    // response = await fetch('https://api.github.com/search/repositories?q=topic:brainweb fork:true');
-    response = await fetch('https://api.github.com/search/repositories?q=topic:Prime-DRE fork:true');
+    response = await fetch('https://api.github.com/search/repositories?q=topic:prime-dre fork:true');
     res = await response.json();
   } catch (err) {
     throw new Error(err);
